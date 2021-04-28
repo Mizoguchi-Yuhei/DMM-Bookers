@@ -1,10 +1,18 @@
-<h1>Books</h1>
-
+<h1 class="heading">Books</h1>
+  <% @books.each do |book| %>
+    <div>
+      <%= book.title %>
+      <%= book.body %>
+      <%= link_to "Show", book_path(:id) %>
+      <%= link_to "Edit", edit_book_path(:id) %>
+      <%= link_to "Destroy", book_path(:id), method: :delete, "data-confirm" => "Are you sure you want to delete it?" %>
+    </div>
+  <% end %>
 <h2>New book</h2>
 <%= form_with model: @book, local:true do |f| %>
   <h4>Title</h4>
   <%= f.text_field :title %>
   <h4>Body</h4>
   <%= f.text_area :body %>
-  <%= f.submit "Create Book" %>
+  <p><%= f.submit "Create Book" %></p>
 <% end %>
