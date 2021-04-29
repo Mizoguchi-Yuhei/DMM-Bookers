@@ -38,7 +38,6 @@ tr {
 }
 
 .field {
-  margin-bottom: 10px;
   display: block;
 }
 
@@ -46,9 +45,12 @@ tr {
   display: block;
 }
 
-.createbook_btn {
+.part {
+  margin-bottom: 10px;
+}
+
+.create_btn {
   display: block;
   text-align: left;
-  padding: 1px 6px;
   border-width: 2px;
 }
