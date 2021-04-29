@@ -5,9 +5,10 @@
       <%= book.body %>
       <%= link_to "Show", book_path(book) %>
       <%= link_to "Edit", edit_book_path(book) %>
-      <%= link_to "Destroy", book_path(:id), method: :delete, "data-confirm" => "Are you sure you want to delete it?" %>
+      <%= link_to "Destroy", book_path(book), method: :delete, "data-confirm" => "Are you sure?" %>
     </div>
   <% end %>
+
 <h2>New book</h2>
 <%= form_with model: @book, local:true do |f| %>
   <h4>Title</h4>
