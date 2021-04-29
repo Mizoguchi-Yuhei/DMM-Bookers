@@ -23,11 +23,13 @@
   </table>
 
   <h2>New book</h2>
-  <%= form_with model: @book, local:true do |f| %>
-    <h4>Title</h4>
-    <%= f.text_field :title %>
-    <h4>Body</h4>
-    <%= f.text_area :body %>
-    <p><%= f.submit "Create Book" %></p>
-  <% end %>
+  <div class="field">
+    <%= form_with model: @book, local:true do |f| %>
+      <label for="book_title" class="form">Title</label>
+      <%= f.text_field :title %>
+      <label for="book_body" class="form">Body</label>
+      <%= f.text_area :body %>
+      <p class="createbook_btn"><%= f.submit "Create Book" %></p>
+    <% end %>
+  </div>
 </body>

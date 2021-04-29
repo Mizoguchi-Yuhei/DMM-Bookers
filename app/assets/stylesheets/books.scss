@@ -11,7 +11,9 @@
   font-size: 13px;
   line-height: 18px;
   margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
 }
+
 
 .item-list {
   display: table;
@@ -33,4 +35,20 @@ tr {
 .item {
   display: table-row-group;
   vertical-align: middle;
+}
+
+.field {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form {
+  display: block;
+}
+
+.createbook_btn {
+  display: block;
+  text-align: left;
+  padding: 1px 6px;
+  border-width: 2px;
 }

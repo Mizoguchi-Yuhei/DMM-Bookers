@@ -1,16 +1,28 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-* {
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
 
+body {
+  background-color: #fff;
+  color: #333;
+  font-size: 13px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  margin: 33px;
+}
+
+span {
+  font-weight: bold;
 }
 
 h1 {
   font-weight: bold;
 }
 
-p {
+.top-body {
   margin: 33px;
-  font-family: verdane, arial, helvetica, sans-serif;
-  font-size: 18px;
 }
