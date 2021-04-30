@@ -37,6 +37,10 @@ tr {
   vertical-align: middle;
 }
 
+.show_main .show_item {
+  margin: 33px;
+}
+
 .field {
   display: block;
 }
@@ -54,4 +58,8 @@ tr {
   text-align: left;
   border-width: 2px;
   margin-bottom: 10px;
+}
+
+.success_flash {
+  color: green;
 }

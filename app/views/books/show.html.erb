@@ -1,5 +1,10 @@
-<%= flash[:success] %>
-<p class="book-title">Title: <%= @book.title %></p>
-<p class="book-body">Body: <%= @book.body %></p>
-<%= link_to "Edit", edit_book_path(@book.id) %>
-<%= link_to "Back", books_path %>
+<div class="success_flash">
+  <%= flash[:success] %>
+</div>
+<body class="show_main">
+    <p class="show_item"><strong>Tiele: </strong><%= @book.title %></p>
+    <p class="show_item"><strong>Body: </strong><%= @book.body %></p>
+    <%= link_to "Edit", edit_book_path(@book.id) %>
+    |
+    <%= link_to "Back", books_path %>
+</body>
