@@ -1,5 +1,5 @@
 # README
-DMM WEBCAMPの学習コンテンツ アプリケーションを完成させよう:基礎編 の課題3-8 Bookers です。
+DMM WEBCAMPの学習コンテンツ アプリケーションを完成させよう:基礎編 の 課題3-8 Bookers です。
 
 ## 使い方
 Railsファイルのため、rails serverを起動して実行してください。
